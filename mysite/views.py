@@ -104,4 +104,4 @@ def darkorbit(request):
   message = message.replace('&',' and ')
 
   print(message)
-  return render(request,message)
+  
