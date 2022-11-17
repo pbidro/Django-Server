@@ -18,4 +18,6 @@ from . import views
 
 urlpatterns = [
     path('', views.inicio),
+    path('dark/', views.darkorbit),
+
 ]
