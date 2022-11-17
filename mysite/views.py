@@ -8,7 +8,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 def inicio(request):
-  return render(request,"index.html")
+  return render(request,"index.html","hello")
 
 def darkorbit(request):
   #configuracion de variables y parametros
@@ -102,6 +102,7 @@ def darkorbit(request):
   Bot creado por el Clan int1 Sir Latin Gremmy """
 
   message = message.replace('&',' and ')
+  contexto = {'message':message }
 
   print(message)
-  
+  return render(request,"index.html",contexto)
